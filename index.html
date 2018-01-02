@@ -1,0 +1,253 @@
+<!doctype html>
+<html dir="ltr" class="normalize-html font--primary">
+	<title>Marble CSS</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:description" content="A set of UI components behind Electric and WeDeploy">
+	<meta property="og:image" content="https://jonathantneal.github.io/marble-css/image.jpg">
+	<meta property="og:image:alt" content="Marble CSS logo">
+	<meta property="og:site_name" content="Marble CSS">
+	<meta property="og:title" content="Marble CSS">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://jonathantneal.github.io/marble-css/">
+	<style>
+	section{align-items:center;display:flex;flex-wrap:wrap}
+	section+section{margin-top:20px}
+	section>h2{flex-basis:100%}
+	section.spaced>:nth-child(n+2):nth-last-child(n+2){margin-right:10px}
+	</style>
+	<link href="marble.atomic.min.css" rel="stylesheet">
+
+	<svg style="display:none">
+		<symbol id="alert" viewBox="0 0 1020 1440">
+			<path d="M991.9 885C844.1 619 843 617 695.3 351.1 659.9 285 590.2 240 510 240s-149.9 45-185.3 111.1C177 617 175.9 619 28.1 885 10.2 915.9 0 951.7 0 990c0 116 94 210 210 210h600c116 0 210-94 210-210 0-38.3-10.2-74.1-28.1-105zM510 1080c-49.7 0-90-40.3-90-90s40.3-90 90-90 90 40.3 90 90-40.3 90-90 90zm90-377.1c0 42.6-40.3 77.1-90 77.1s-90-34.5-90-77.1V497.1c0-42.6 40.3-77.1 90-77.1s90 34.5 90 77.1v205.8z"/>
+		</symbol>
+		<symbol id="arrow-down" viewBox="0 0 780 1440">
+			<path d="M300 391v502.7L153.6 747.4c-35.1-35.1-92.1-35.1-127.3 0-35.1 35.1-35.1 92.1 0 127.3l300 300c35.1 35.1 92.1 35.1 127.3 0l300-300C771.2 857.1 780 834 780 811s-8.8-46.1-26.4-63.6c-35.1-35.1-92.1-35.1-127.3 0L480 893.7V391c0-49.7-40.3-90-90-90s-90 40.3-90 90z"/>
+		</symbol>
+		<svg id="checkmark" viewBox="0 0 900 1440">
+			<path d="M873.6 573.6l-480 480c-16.3 16.3-38.8 26.4-63.6 26.4-24.9 0-47.4-10.1-63.6-26.4l-240-240C10.1 797.4 0 774.9 0 750c0-49.7 40.3-90 90-90 24.9 0 47.4 10.1 63.6 26.4 94 93.9 114.4 114.3 176.4 176.3l416.4-416.4c16.3-16.3 38.8-26.4 63.6-26.4 49.7 0 90 40.3 90 90 0 25-10.1 47.5-26.4 63.7z"/>
+		</svg>
+		<symbol id="chevron-down" viewBox="0 0 780 1440">
+			<path d="M746.2 700.3c-140.6 112.4-159.4 127.6-300 240-15.4 12.3-34.9 19.7-56.2 19.7s-40.8-7.4-56.2-19.7c-140.6-112.4-159.4-127.6-300-240C13.2 683.8 0 658.4 0 630c0-49.7 40.3-90 90-90 21.3 0 40.8 7.4 56.2 19.7 119.3 95.4 151 120.8 243.8 195 92.8-74.2 124.5-99.6 243.8-195 15.4-12.3 34.9-19.7 56.2-19.7 49.7 0 90 40.3 90 90 0 28.4-13.2 53.8-33.8 70.3z"/>
+		</symbol>
+		<symbol id="star" viewBox="0 0 1080 1440">
+			<path d="M1080 600c0-33.1-26.9-60-60-60H703.2c-48.5-145.6-90.9-272.6-105.9-317.8l-.3-.9c0-.1-.1-.2-.1-.3-7.9-23.8-30.4-41-56.9-41s-49 17.2-56.9 41c0 .1-.1.2-.1.3-.1.3-.2.6-.3 1-15.1 45.2-57.4 172.2-105.9 317.8H60c-33.1 0-60 26.9-60 60 0 20.4 10.2 38.5 25.9 49.3.2.1.3.2.5.4l.1.1c36.7 25.4 137.2 95 254.9 176.4-45.5 136.6-84.4 253.1-98.3 294.8-2 6-3.1 12.3-3.1 19 0 33.1 26.9 60 60 60 12.7 0 24.5-4 34.1-10.7 37.2-25.7 143-99 265.8-184 122.8 85 228.7 158.3 265.8 184 9.7 6.7 21.5 10.7 34.1 10.7 33.1 0 60-26.9 60-60 0-6.6-1.1-13-3.1-19-13.9-41.7-52.7-158.2-98.3-294.8 117.7-81.5 218.2-151.1 254.9-176.4l.1-.1c.2-.1.3-.2.5-.4 15.9-10.9 26.1-29 26.1-49.4z"/>
+		</symbol>
+	</svg>
+
+	<section id="icons">
+		<h2>Icons with sizes</h2>
+		<svg class="icon"><use href="#alert"/></svg>
+		<svg class="icon--s"><use href="#alert"/></svg>
+		<svg class="icon"><use href="#arrow-down"/></svg>
+		<svg class="icon icon--s"><use href="#arrow-down"/></svg>
+		<svg class="icon"><use href="#chevron-down"/></svg>
+		<svg class="icon icon--s"><use href="#chevron-down"/></svg>
+		<svg class="icon"><use href="#star"/></svg>
+		<svg class="icon icon--s"><use href="#star"/></svg>
+	</section>
+
+	<section id="avatars">
+		<h2>Avatars</h2>
+		<span class="avatar">
+			<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+		</span>
+		<span class="avatar avatar--xl">
+			<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+		</span>
+		<span class="avatar avatar--l">
+			<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+		</span>
+		<span class="avatar avatar--m">
+			<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+		</span>
+		<span class="avatar avatar--s">
+			<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+		</span>
+		<span class="avatar avatar--xs">
+			<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+		</span>
+	</section>
+	<section>
+		<h2>Avatars with shapes</h2>
+		<span class="avatar avatar--squared">
+			<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+		</span>
+		<span class="avatar avatar--round">
+			<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+		</span>
+	</section>
+	<section>
+		<h2>Avatars with text</h2>
+		<span class="avatar">a</span>
+		<span class="avatar avatar--xl">b</span>
+		<span class="avatar avatar--l">c</span>
+		<span class="avatar avatar--m">d</span>
+		<span class="avatar avatar--s">e</span>
+		<span class="avatar avatar--xs">f</span>
+	</section>
+	<section>
+		<h2>Avatars with icons</h2>
+		<span class="avatar"><svg class="icon"><use href="#alert"/></svg></span>
+		<span class="avatar avatar--xl"><svg class="icon"><use href="#chevron-down"/></svg></span>
+		<span class="avatar avatar--l"><svg class="icon"><use href="#arrow-down"/></svg></span>
+		<span class="avatar avatar--m"><svg class="icon"><use href="#alert"/></svg></span>
+		<span class="avatar avatar--s"><svg class="icon"><use href="#arrow-down"/></svg></span>
+		<span class="avatar avatar--xs"><svg class="icon"><use href="#chevron-down"/></svg></span>
+	</section>
+
+	<section id="avatar-lists">
+		<h2>Avatar lists</h2>
+		<span class="avatar_list">
+			<span class="avatar">+2</span>
+			<span class="avatar">
+				<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+			</span>
+			<span class="avatar">
+				<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+			</span>
+			<span class="avatar">
+				<img class="avatar-image" src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">
+			</span>
+		</span>
+	</section>
+
+	<section id="spinners" class="spaced">
+		<h2>Spinners</h2>
+		<span class="spinner"></span>
+		<span class="spinner spinner--s"></span>
+		<span class="spinner spinner--m"></span>
+		<span class="spinner spinner--l"></span>
+	</section>
+	<section class="spaced">
+		<h2>Spinners with colors</h2>
+		<span class="spinner color--primary"></span>
+		<span class="spinner color--danger"></span>
+		<span class="spinner color--success"></span>
+		<span class="spinner color--warning"></span>
+	</section>
+	<section class="spaced">
+		<h2>Spinners with states (click to test)</h2>
+		<span class="spinner" onclick="this.classList.toggle('spinner--done')">
+			<svg class="icon"><use href="#checkmark"/></svg>
+		</span>
+		<span class="spinner color--danger spinner--done" onclick="this.classList.toggle('spinner--done')">
+			<svg class="icon"><use href="#checkmark"/></svg>
+		</span>
+		<span class="spinner color--success spinner--m" onclick="this.classList.toggle('spinner--done')">
+			<svg class="icon"><use href="#checkmark"/></svg>
+		</span>
+		<span class="spinner color--warning spinner--l spinner--done" onclick="this.classList.toggle('spinner--done')">
+			<svg class="icon"><use href="#checkmark"/></svg>
+		</span>
+	</section>
+
+	<section id="buttons" class="spaced">
+		<h2>Buttons</h2>
+		<span class="button">Default</span>
+		<span class="button">Default<br>Multiline</span>
+		<span class="button button--icon">
+			<svg class="icon icon--s"><use href="#star"/></svg>
+		</span>
+	</section>
+	<section class="spaced">
+		<h2>Buttons with colors</h2>
+		<span class="button bg--danger">Danger</span>
+		<span class="button bg--primary">Primary</span>
+		<span class="button bg--success">Success</span>
+		<span class="button bg--warning">Warning</span>
+	</section>
+	<section class="spaced">
+		<h2>Buttons with icons and text</h2>
+		<span class="button">
+			<svg class="icon"><use href="#star"/></svg>
+			<span>Star</span>
+		</span>
+		<span class="button">
+			<svg class="icon"><use href="#arrow-down"/></svg>
+			<span>Arrow Down</span>
+		</span>
+		<span class="button">
+			<svg class="icon"><use href="#alert"/></svg>
+			<span>Alert<br>Multiline</span>
+		</span>
+		<span class="button">
+			<span>Arrow Down</span>
+			<svg class="icon"><use href="#arrow-down"/></svg>
+		</span>
+		<span class="button">
+			<span>Alert</span>
+			<svg class="icon"><use href="#alert"/></svg>
+		</span>
+		<span class="button">
+			<span>Star</span>
+			<svg class="icon"><use href="#star"/></svg>
+		</span>
+	</section>
+	<section class="spaced">
+		<h2>Buttons with colors using native button elements</h2>
+		<button class="normalize-button unset-button button bg--default">Default</button>
+		<button class="normalize-button unset-button button bg--primary">Primary</button>
+		<button class="normalize-button unset-button button bg--primary">Primary<br>Multiline</button>
+		<button class="normalize-button unset-button button bg--danger">Danger</button>
+		<button class="normalize-button unset-button button bg--success">Success</button>
+		<button class="normalize-button unset-button button bg--warning">Warning</button>
+	</section>
+	<section class="spaced">
+		<h2>Buttons with colors using native button elements that are disabled</h2>
+		<button class="normalize-button unset-button button bg--default" disabled>Default</button>
+		<button class="normalize-button unset-button button bg--primary" disabled>Primary</button>
+		<button class="normalize-button unset-button button bg--primary" disabled>Primary<br>Multiline</button>
+		<button class="normalize-button unset-button button bg--danger" disabled>Danger</button>
+		<button class="normalize-button unset-button button bg--success" disabled>Success</button>
+		<button class="normalize-button unset-button button bg--warning" disabled>Warning</button>
+	</section>
+
+	<section id="controls" class="spaced">
+		<h2>Controls</h2>
+		<input class="control">
+		<input class="control" placeholder="Write something here...">
+		<input class="control" value="This is a value" placeholder="Write something here...">
+	</section>
+
+	<section id="controls" class="spaced">
+		<h2>Controls with colors</h2>
+		<input class="control bg--danger" value="Danger">
+		<input class="control bg--primary" value="Primary">
+		<input class="control bg--success" value="Success">
+		<input class="control bg--warning" value="Warning">
+	</section>
+
+	<section id="controls" class="spaced">
+		<h2>Controls with faded colors</h2>
+		<input class="control bg--danger--faded" value="Danger Faded">
+		<input class="control bg--success--faded" value="Success Faded">
+		<input class="control bg--warning--faded" value="Warning Faded">
+	</section>
+
+	<section class="spaced">
+		<h2>Control Groups</h2>
+		<span class="control_group">
+			<label class="label">Generic label</label>
+			<input class="control">
+		</span>
+		<span class="control_group">
+			<label class="label">Generic label</label>
+			<input class="control" placeholder="Write something here...">
+		</span>
+		<span class="control_group">
+			<label class="label">Generic label</label>
+			<input class="control" value="This is a value" placeholder="Write something here...">
+		</span>
+		<span class="control_group">
+			<label class="label">Generic label</label>
+			<input class="control control-before-button" placeholder="Write something here...">
+			<button class="normalize-button unset-button button button--icon">
+				<svg class="icon icon--s"><use href="#star"/></svg>
+			</button>
+		</span>
+	</section>
+</html>
