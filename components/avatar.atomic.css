@@ -1,0 +1,61 @@
+@import "./avatar";
+
+/* Avatar
+/* ========================================================================== */
+
+.avatar {
+	@extend %avatar, %avatar--m, %radius--round;
+
+	& > img {
+		@extend %avatar-image;
+	}
+}
+
+/* Avatar: Radii
+/* ========================================================================== */
+
+.avatar--round {
+	@extend %radius--round;
+}
+
+.avatar--squared {
+	@extend %radius--squared;
+}
+
+/* Avatar: Sizes
+/* ========================================================================== */
+
+.avatar--xs {
+	@extend %avatar--xs;
+}
+
+.avatar--s {
+	@extend %avatar--s;
+}
+
+.avatar--m {
+	@extend %avatar--m;
+}
+
+.avatar--l {
+	@extend %avatar--l;
+}
+
+.avatar--xl {
+	@extend %avatar--xl;
+}
+
+/* Avatar: List
+/* ========================================================================== */
+
+.avatar_list {
+	@extend %avatar_list;
+
+	& > * {
+		box-shadow: 0 0 0 2px $color-white;
+	}
+
+	& > :not(:first-child) {
+		@extend %avatar_list-inner-sibling;
+	}
+}

@@ -1,0 +1,20 @@
+@import "./button";
+
+/* Button: Styles
+/* ========================================================================== */
+
+.button {
+	@extend %button, %button--text;
+
+	& > * + * {
+		@extend %button-inner-sibling;
+	}
+}
+
+.button--icon {
+	@extend %button--icon;
+}
+
+.button--text {
+	@extend %button--text;
+}

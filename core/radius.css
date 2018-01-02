@@ -1,0 +1,16 @@
+/* Radius
+/* ========================================================================== */
+
+$radius-round:   50%;
+$radius-squared: 4px;
+
+/* Radius: Styles
+/* ========================================================================== */
+
+%radius--round {
+	border-radius: $radius-round;
+}
+
+%radius--squared {
+	border-radius: $radius-squared;
+}

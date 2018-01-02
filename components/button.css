@@ -1,0 +1,46 @@
+@import "../core/all";
+
+/* Button
+/* ========================================================================== */
+
+$button-size-text:    60px;
+$button-size-icon:    36px;
+$button-font-size:    16px;
+$button-line-height:  18px;
+$button-padding-text: 48px;
+$button-padding-icon: calc($button-size-icon - 16px);
+
+/* Button: Styles
+/* ========================================================================== */
+
+%button {
+	@extend %radius--squared;
+
+	align-items: center;
+	background-color: $color-primary-faded;
+	color: $color-primary-text-faded;
+	display: inline-flex;
+	fill: currentColor;
+	font-size: $button-font-size;
+	font-weight: 600;
+	line-height: $button-line-height;
+	text-align: center;
+}
+
+%button--icon {
+	padding: calc($button-padding-icon / 2);
+}
+
+%button--text {
+	padding: calc(($button-size-text - $button-line-height) / 2) $button-padding-text;
+}
+
+%button-inner-sibling {
+	margin-inline-start: 6px;
+}
+
+%button-as-action {
+	inset-block-start: 12px;
+	inset-inline-end: 12px;
+	position: absolute;
+}

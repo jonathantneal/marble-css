@@ -1,0 +1,49 @@
+@import "../core/all";
+
+/* Spinner
+/* ========================================================================== */
+
+$spinner-s: 24px;
+$spinner-m: 36px;
+$spinner-l: 48px;
+
+/* Spinner: Styles
+/* ========================================================================== */
+
+%spinner {
+	@extend %radius--round;
+
+	align-items: center;
+	animation: spinner .6s linear infinite;
+	border: 3px solid;
+	border-block-start: 3px solid transparent;
+	box-sizing: border-box;
+	display: inline-flex;
+	fill: transparent;
+	justify-content: center;
+	overflow: hidden;
+	text-align: center;
+	transition: background-color .3s;
+}
+
+%spinner--done {
+	animation-iteration-count: 0;
+	background-color: currentColor;
+	border-width: 0;
+	fill: $color-white;
+}
+
+/* Spinner: Sizes
+/* ========================================================================== */
+
+%spinner--s {
+	size: $spinner-s;
+}
+
+%spinner--m {
+	size: $spinner-m;
+}
+
+%spinner--l {
+	size: $spinner-l;
+}

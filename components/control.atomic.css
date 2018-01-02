@@ -1,0 +1,27 @@
+@import "./control";
+
+/* Control: Styles
+/* ========================================================================== */
+
+.control {
+	@extend %control;
+}
+
+.label {
+	@extend %label;
+}
+
+.control_group {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.control-before-button {
+	padding-inline-end: calc(36px + 12px * 2);
+
+	& + .button {
+		inset-end: 12px;
+		position: absolute;
+	}
+}

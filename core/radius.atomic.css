@@ -1,0 +1,12 @@
+@import "./radius";
+
+/* Radius: Styles
+/* ========================================================================== */
+
+.radius--round {
+	@extend %radius--round;
+}
+
+.radius--squared {
+	@extend %radius--squared;
+}

@@ -1,0 +1,88 @@
+@import "./color";
+
+/* Color: Styles
+/* ========================================================================== */
+
+.color--danger {
+	color: $color-danger;
+}
+
+.color--danger--faded {
+	color: $color-danger-faded;
+}
+
+.color--default {
+	color: $color-default;
+}
+
+.color--primary {
+	color: $color-primary;
+}
+
+.color--primary--faded {
+	color: $color-primary;
+}
+
+.color--success {
+	color: $color-success;
+}
+
+.color--success--faded {
+	color: $color-success-faded;
+}
+
+.color--warning {
+	color: $color-warning;
+}
+
+.color--warning--faded {
+	color: $color-warning-faded;
+}
+
+/* Color: Styles: Background
+/* ========================================================================== */
+
+.bg--danger {
+	background-color: $color-danger;
+	color: $color-danger-text;
+}
+
+.bg--danger--faded {
+	background-color: $color-danger-faded;
+	color: $color-danger-text-faded;
+}
+
+.bg--default {
+	background-color: $color-default;
+	color: $color-default-text;
+}
+
+.bg--primary {
+	background-color: $color-primary;
+	color: $color-primary-text;
+}
+
+.bg--primary--faded {
+	background-color: $color-primary-faded;
+	color: $color-primary-text-faded;
+}
+
+.bg--success {
+	background-color: $color-success;
+	color: $color-success-text;
+}
+
+.bg--success--faded {
+	background-color: $color-success-faded;
+	color: $color-success-text-faded;
+}
+
+.bg--warning {
+	background-color: $color-warning;
+	color: $color-warning-text;
+}
+
+.bg--warning--faded {
+	background-color: $color-warning-faded;
+	color: $color-warning-text-faded;
+}

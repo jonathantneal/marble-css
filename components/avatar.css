@@ -1,0 +1,88 @@
+@import "../core/all";
+
+/* Avatar: Variables
+/* ========================================================================== */
+
+$avatar-xs: 24px;
+$avatar-s:  36px;
+$avatar-m:  48px;
+$avatar-l:  60px;
+$avatar-xl: 72px;
+
+$avatar-text-xs: 12px;
+$avatar-text-s:  14px;
+$avatar-text-m:  16px;
+$avatar-text-l:  18px;
+$avatar-text-xl: 20px;
+
+/* Avatar: Styles
+/* ========================================================================== */
+
+%avatar {
+	align-items: center;
+	background-color: $color-primary;
+	color: $color-primary-text;
+	display: inline-flex;
+	fill: currentColor;
+	font-family: $font-primary;
+	font-weight: 700;
+	justify-content: center;
+	overflow: hidden;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+%avatar-image {
+	size: 100%;
+}
+
+/* Avatar: Sizes
+/* ========================================================================== */
+
+%avatar--xs {
+	font-size: $avatar-text-xs;
+	line-height: 1;
+	size: $avatar-xs;
+}
+
+%avatar--xs {
+	font-size: $avatar-text-xs;
+	line-height: 1;
+	sze: $avatar-xs;
+}
+
+%avatar--s {
+	font-size: $avatar-text-s;
+	line-height: 1;
+	size: $avatar-s;
+}
+
+%avatar--m {
+	font-size: $avatar-text-m;
+	line-height: 1;
+	size: $avatar-m;
+}
+
+%avatar--l {
+	font-size: $avatar-text-l;
+	line-height: 1;
+	size: $avatar-l;
+}
+
+%avatar--xl {
+	font-size: $avatar-text-xl;
+	line-height: 1;
+	size: $avatar-xl;
+}
+
+/* Avatar: List
+/* ========================================================================== */
+
+%avatar_list {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+%avatar_list-inner-sibling {
+	margin-inline-end: -10px;
+}

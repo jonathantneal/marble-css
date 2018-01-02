@@ -1,0 +1,16 @@
+/* Font
+/* ========================================================================== */
+
+$font-primary: "Galano", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+
+/* Font: Styles
+/* ========================================================================== */
+
+%font--primary {
+	font-family: $font-primary;
+}
+
+%font--secondary {
+	font-family: $font-secondary;
+}

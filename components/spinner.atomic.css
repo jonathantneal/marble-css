@@ -1,0 +1,36 @@
+@import "./spinner";
+
+/* Spinner
+/* ========================================================================== */
+
+.spinner {
+	@extend %spinner, %spinner--s;
+}
+
+.spinner--done {
+	@extend %spinner--done;
+}
+
+/* Avatar: Sizes
+/* ========================================================================== */
+
+.spinner--s {
+	@extend %spinner--s;
+}
+
+.spinner--m {
+	@extend %spinner--m;
+}
+
+.spinner--l {
+	@extend %spinner--l;
+}
+
+/* Spinner: Animation
+/* ========================================================================== */
+
+@keyframes spinner {
+	0% {
+		transform: rotate(-360deg);
+	}
+}

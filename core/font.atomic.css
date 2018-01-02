@@ -1,0 +1,12 @@
+@import "./font";
+
+/* Font: Styles
+/* ========================================================================== */
+
+.font--primary {
+	@extend %font--primary;
+}
+
+.font--secondary {
+	@extend %font--secondary;
+}

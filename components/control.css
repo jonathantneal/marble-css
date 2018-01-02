@@ -1,0 +1,28 @@
+@import "../core/all";
+
+/* Control: Styles
+/* ========================================================================== */
+
+%control {
+	@extend %normalize-input, %unset-input, %radius--squared;
+
+	background-color: $gray-90;
+	color: $color-primary;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
+	padding: 21px 20px;
+}
+
+%label {
+	@extend %font--secondary;
+
+	color: $gray-50;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+%control-containing-button {
+	padding-inline-end: calc(36px + 12px * 2);
+}

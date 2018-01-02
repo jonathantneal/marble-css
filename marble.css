@@ -1,0 +1,7 @@
+@import "practical-styles";
+@import "./core/all";
+@import "./components/all";
+
+* {
+	@extend %border-box;
+}

@@ -1,0 +1,37 @@
+/* Color
+/* ========================================================================== */
+
+$color-black:  #000000;
+$color-white:  #ffffff;
+$color-red:    #ff4040;
+$color-orange: #ffb700;
+$color-green:  #00d46a;
+
+$gray-25: #0e141a;
+$gray-50: #797979;
+$gray-90: #e7e7e7;
+
+$color-danger:  $color-red;
+$color-default: $gray-90;
+$color-primary: $gray-25;
+$color-success: $color-green;
+$color-warning: $color-orange;
+
+$color-danger-text:  $color-white;
+$color-default-text: $color-black;
+$color-primary-text: $color-white;
+$color-success-text: $color-white;
+$color-warning-text: $color-white;
+
+/* Color: Faded
+/* ========================================================================== */
+
+$color-danger-faded:  color($color-danger alpha(10%));
+$color-primary-faded: color($color-primary alpha(10%));
+$color-success-faded: color($color-success alpha(10%));
+$color-warning-faded: color($color-warning alpha(10%));
+
+$color-danger-text-faded:  color($color-primary alpha(80%));
+$color-primary-text-faded: color($color-primary alpha(80%));
+$color-success-text-faded: color($color-primary alpha(80%));
+$color-warning-text-faded: color($color-primary alpha(80%));
